@@ -100,7 +100,7 @@ setTimeout(blastOff, MILLISECONDS_PER_DAY);
 **سيء:**
 
 ```javascript
-const address = "One Infinite Loop, Cupertino 95014";
+const address = "Abbas El-Akkad, Nasr City, Cairo Governorate";
 const cityZipCodeRegex = /^[^,\\]+[,\\\s]+(.+?)\s*(\d{5})?$/;
 saveCityZipCode(
   address.match(cityZipCodeRegex)[1],
@@ -111,7 +111,7 @@ saveCityZipCode(
 **الأفضل:**
 
 ```javascript
-const address = "One Infinite Loop, Cupertino 95014";
+const address = "Abbas El-Akkad, Nasr City, Cairo Governorate";
 const cityZipCodeRegex = /^[^,\\]+[,\\\s]+(.+?)\s*(\d{5})?$/;
 const [_, city, zipCode] = address.match(cityZipCodeRegex) || [];
 saveCityZipCode(city, zipCode);
@@ -126,7 +126,7 @@ saveCityZipCode(city, zipCode);
 **سيء:**
 
 ```javascript
-const locations = ["Austin", "New York", "San Francisco"];
+const locations = ["Cairo", "Giza", "Kafr El Sheikh"];
 locations.forEach(l => {
   doStuff();
   doSomeOtherStuff();
@@ -141,7 +141,7 @@ locations.forEach(l => {
 **الأفضل:**
 
 ```javascript
-const locations = ["Austin", "New York", "San Francisco"];
+const locations = ["Cairo", "Giza", "Kafr El Sheikh"];
 locations.forEach(location => {
   doStuff();
   doSomeOtherStuff();
@@ -198,8 +198,8 @@ function paintCar(car, color) {
 **سيء:**
 
 ```javascript
-function createMicrobrewery(name) {
-  const breweryName = name || "Hipster Brew Co.";
+function createMicrojuicy(name) {
+  const juicyName = name || "Juhayna";
   // ...
 }
 ```
@@ -207,7 +207,7 @@ function createMicrobrewery(name) {
 **الأفضل:**
 
 ```javascript
-function createMicrobrewery(name = "Hipster Brew Co.") {
+function createMicrojuicy(name = "Juhayna") {
   // ...
 }
 ```
