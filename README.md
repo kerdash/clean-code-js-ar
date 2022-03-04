@@ -36,7 +36,7 @@ _الكود النظيف_
 
 ## **المتغيرات**
 
-### Use meaningful and pronounceable variable names
+### قم بأستخدام اسماء مفهومة وذات معني في المتغيرات
 
 **سيء:**
 
@@ -52,7 +52,7 @@ const currentDate = moment().format("YYYY/MM/DD");
 
 **[⬆ عودة للأعلي](#جدول-العناصر)**
 
-### Use the same vocabulary for the same type of variable
+### قم بأستخدام متغير واحد لنفس النوع من المتغيرات
 
 **سيء:**
 
@@ -70,7 +70,7 @@ getUser();
 
 **[⬆ عودة للأعلي](#جدول-العناصر)**
 
-### Use searchable names
+### قم بأستخدام اسماء قابلة للبحث
 
 We will read more code than we will ever write. It's important that the code we
 do write is readable and searchable. By _not_ naming variables that end up
@@ -98,7 +98,7 @@ setTimeout(blastOff, MILLISECONDS_PER_DAY);
 
 **[⬆ عودة للأعلي](#جدول-العناصر)**
 
-### Use explanatory variables
+### قم بأستخدام متغيرات توضيحية
 
 **سيء:**
 
@@ -122,7 +122,7 @@ saveCityZipCode(city, zipCode);
 
 **[⬆ عودة للأعلي](#جدول-العناصر)**
 
-### Avoid Mental Mapping
+### تجنب الخرائط الذهنية
 
 Explicit is better than implicit.
 
@@ -157,7 +157,7 @@ locations.forEach(location => {
 
 **[⬆ عودة للأعلي](#جدول-العناصر)**
 
-### Don't add unneeded context
+### لا تقم بأضفة اي سياق غير ضروري
 
 If your class/object name tells you something, don't repeat that in your
 variable name.
@@ -192,7 +192,7 @@ function paintCar(car, color) {
 
 **[⬆ عودة للأعلي](#جدول-العناصر)**
 
-### Use default arguments instead of short circuiting or conditionals
+### بدلا من استخدام الدوائر الشرطية استخدم الوسيطات القصيرة
 
 Default arguments are often cleaner than short circuiting. Be aware that if you
 use them, your function will only provide default values for `undefined`
