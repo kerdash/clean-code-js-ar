@@ -72,13 +72,10 @@ getUser();
 
 ### قم بأستخدام اسماء قابلة للبحث
 
-We will read more code than we will ever write. It's important that the code we
-do write is readable and searchable. By _not_ naming variables that end up
-being meaningful for understanding our program, we hurt our readers.
-Make your names searchable. Tools like
-[buddy.js](https://github.com/danielstjules/buddy.js) and
+سنقرأ الكثير من الاكواد اكثر من التي سنكتبها. من المهم ان يكون الكود قابل للقراءة والبحث. من خلال عدم تسمية المتغيرات التي ينتهي بها الامر ان تكون ذات مغزي لفهم البرنامج, نحن هكذا نؤذي القراء. قم بأستخادم ادوات ك
+[buddy.js](https://github.com/danielstjules/buddy.js) و
 [ESLint](https://github.com/eslint/eslint/blob/660e0918933e6e7fede26bc675a0763a6b357c94/docs/rules/no-magic-numbers.md)
-can help identify unnamed constants.
+في تحديد الثوابت المسماة
 
 **سيء:**
 
@@ -124,7 +121,7 @@ saveCityZipCode(city, zipCode);
 
 ### تجنب الخرائط الذهنية
 
-Explicit is better than implicit.
+الصريح افضل من الضمني.
 
 **سيء:**
 
@@ -159,8 +156,7 @@ locations.forEach(location => {
 
 ### لا تقم بأضفة اي سياق غير ضروري
 
-If your class/object name tells you something, don't repeat that in your
-variable name.
+اذا كان اسم الكائن يخبرك بشيء ما, فلا تكرر اسماء المتغيرات
 
 **سيء:**
 
@@ -194,10 +190,10 @@ function paintCar(car, color) {
 
 ### بدلا من استخدام الدوائر الشرطية استخدم الوسيطات القصيرة
 
-Default arguments are often cleaner than short circuiting. Be aware that if you
-use them, your function will only provide default values for `undefined`
-arguments. Other "falsy" values such as `''`, `""`, `false`, `null`, `0`, and
-`NaN`, will not be replaced by a default value.
+غالبا ما تكون الوسيطات الاساسية انظف من الدوائر القصيرة. كن علي علم انك اذا كنت تستخدمها , فأن الدالة ستوفر القيم الافتراضية للوسيطات `undefined`.
+قيم "ذائفة" اخري مثل 
+`''`, `""`, `false`, `null`, `0`, and
+`NaN`, لن يتم استبدالها بقيم افتراضية.
 
 **سيء:**
 
