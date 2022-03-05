@@ -100,7 +100,7 @@ setTimeout(blastOff, MILLISECONDS_PER_DAY);
 **سيء:**
 
 ```javascript
-const address = "Abbas El-Akkad, Nasr City, Cairo Governorate";
+const address = "Abbas El-Akkad , 11765";
 const cityZipCodeRegex = /^[^,\\]+[,\\\s]+(.+?)\s*(\d{5})?$/;
 saveCityZipCode(
   address.match(cityZipCodeRegex)[1],
@@ -111,7 +111,7 @@ saveCityZipCode(
 **الأفضل:**
 
 ```javascript
-const address = "Abbas El-Akkad, Nasr City, Cairo Governorate";
+const address = "Abbas El-Akkad , 11765";
 const cityZipCodeRegex = /^[^,\\]+[,\\\s]+(.+?)\s*(\d{5})?$/;
 const [_, city, zipCode] = address.match(cityZipCodeRegex) || [];
 saveCityZipCode(city, zipCode);
