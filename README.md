@@ -1025,19 +1025,15 @@ inventoryTracker("apples", req, "www.inventory-awesome.io");
 
 ## **هياكل البيانات و الكائنات**
 
-### Use getters and setters
+### استخدم المحققين والمستوطنين
 
-Using getters and setters to access data on objects could be better than simply
-looking for a property on an object. "Why?" you might ask. Well, here's an
-unorganized list of reasons why:
+يمكن استخدام المحققين والمستوطنين للوصول الي البيانات الموجودة علي الكائنات افصل من مجرد استخدام البحث عن الخواص علي الكائنات. قد تسأل "لماذا ؟". قائمة غير منظمة بالأسباب التالية : 
 
-- When you want to do more beyond getting an object property, you don't have
-  to look up and change every accessor in your codebase.
-- Makes adding validation simple when doing a `set`.
-- Encapsulates the internal representation.
-- Easy to add logging and error handling when getting and setting.
-- You can lazy load your object's properties, let's say getting it from a
-  server.
+- عندما تريد أن تفعل أكثر من مجرد الحصول على خاصية الكائن ، فلن تضطر إلى البحث عن كل ملحق في قاعدة التعليمات البرمجية الخاصة بك وتغييره.
+- يجعل إضافة التحقق أمرًا بسيطًا عند القيام بـ `set` - `التعيين`.
+- تلخيص التمثيل الداخلي
+- من السهل إضافة التسجيل ومعالجة الأخطاء عند الحصول عليها وإعدادها.
+- يمكنك تحميل خصائص الكائن الخاص بك ، دعنا نقول الحصول عليه من خادم.
 
 **سيء:**
 
@@ -1086,9 +1082,9 @@ account.setBalance(100);
 
 **[⬆ عودة للأعلي](#جدول-العناصر)**
 
-### Make objects have private members
+### اجعل كائنات لديها اعضاء خاصة
 
-This can be accomplished through closures (for ES5 and below).
+يمكن تحقيق ذلك من خلال عمليات الإغلاق (ل ES5 وما دونها).
 
 **سيء:**
 
