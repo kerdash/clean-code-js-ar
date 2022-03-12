@@ -2203,9 +2203,10 @@ review.perfReview();
 
 ## **التعليقات**
 
-### Only comment things that have business logic complexity.
+### فقط قم بالتعليق على الأشياء التي تحتوي على تعقيد منطق الأعمال.
 
-Comments are an apology, not a requirement. Good code _mostly_ documents itself.
+التعليقات ليست شرطا, ولكنها تبرير. الكود الجيد _في الغالب_ يوثق نفسه.
+
 
 **سيء:**
 
@@ -2248,9 +2249,9 @@ function hashIt(data) {
 
 **[⬆ عودة للأعلي](#جدول-العناصر)**
 
-### Don't leave commented out code in your codebase
+### لا تترك الاكواد المعلقة في قاعدة التعليمات البرمجية الخاصة بك
 
-Version control exists for a reason. Leave old code in your history.
+التحكم في الإصدار موجود لسبب ما. اترك الكود القديم في سجلك.
 
 **سيء:**
 
@@ -2269,10 +2270,9 @@ doStuff();
 
 **[⬆ عودة للأعلي](#جدول-العناصر)**
 
-### Don't have journal comments
+### لا تستخدم التعليقات الطويلة التي توصف الكود بمرور الزمن 
 
-Remember, use version control! There's no need for dead code, commented code,
-and especially journal comments. Use `git log` to get history!
+تذكر, قم بأستخدام التحكم التحكم في الاصدار! لا يوجد حاجة للكود الميت, الاكواد المعلقة , التعليقات الطويلة لوصف التعديلات التي طرأت علي الكود , فلتستخدم `git log` حتي تحصل علي سجل التغيرات والتعديلات!
 
 **سيء:**
 
@@ -2298,10 +2298,9 @@ function combine(a, b) {
 
 **[⬆ عودة للأعلي](#جدول-العناصر)**
 
-### Avoid positional markers
+### تجنب العلامات الموضعية
 
-They usually just add noise. Let the functions and variable names along with the
-proper indentation and formatting give the visual structure to your code.
+عادة ما يضيفون ضوضاء. فلتدع الوظائف وأسماء المتغيرات جنبا الي جنب مع المسافة البادئة والتنسيق تعطيك البنية المرئية للكود
 
 **سيء:**
 
